@@ -1,0 +1,75 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-image: url('images/colorful-background-with-cloud-pattern_204916-380.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    user-select: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+h2{
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    width: 100%;
+    background-color: #2e4d8f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    margin: 10px 1px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #0e1964;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+button:hover {
+    background-color: #10204b;
+}
+
+.submit-details {
+    display: none;
+    max-width: 400px;
+    width: 100%;
+    background-color: #2e4d8f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.submitted {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    form{
+        width: 300px;
+    }
+    .submit-details{
+        width: 250px;
+    }
+}
