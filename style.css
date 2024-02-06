@@ -15,7 +15,6 @@ h1:hover{
 }
 
 div:hover{
-  border-radius: 20%;
   cursor: pointer;
 }
 
@@ -141,6 +140,7 @@ main {
 .v-card img {
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 footer {
@@ -186,4 +186,36 @@ article {
 a {
   text-decoration: none;
   color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for tablets and smaller screens */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for phones and smaller screens */
+  .hero_content h1 {
+    font-size: 3rem;
+  }
+
+  .hero_content h4 {
+    font-size: 1.5rem;
+  }
+
+  nav i {
+    font-size: 2rem;
+  }
+
+  .h-card,
+  .v-card {
+    max-width: 100%;
+  }
 }
