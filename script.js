@@ -34,6 +34,6 @@ function submitForm() {
 function confirmForm() {
     const name = document.getElementById('name').value;
     alert(`Registration Successful ${name}! ✅`)
-    location.replace("http://127.0.0.1:5500/index.html");;
+    location.replace("https://itsankit070.github.io/Blog-App/");;
     document.getElementById('hello').innerText = name;
 }
